@@ -50,7 +50,8 @@ anim_data %>%
        caption = "Note that all FlyBy swipes are interhouse") +
   xlab("Distance (ft) from the John Harvard Statue") +
   ylab("Average Interhouse Swipes Per Dining Location") + 
-  scale_color_manual(values=c("#D2232A","#86171B"))
+  scale_color_manual(values=c("#D2232A","#86171B")) + 
+  theme(legend.position="none")
 
 ```
 
@@ -83,7 +84,8 @@ anim_data %>%
   xlab("Distance (ft) from the John Harvard Statue") +
   ylab("Average Interhouse Swipes Per Dining Location") +
   geom_smooth(method = "lm", se = FALSE, formula = y ~ x) + 
-  scale_color_manual(values=c("#D2232A","#86171B"))
+  scale_color_manual(values=c("#D2232A","#86171B")) + 
+  theme(legend.position="none")
 
 ```
 
