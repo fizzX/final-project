@@ -103,7 +103,9 @@ pct %>%
        fill = "Houses",
        subtitle = "Vertical Line Represents Each House's True Percentage of Interhouse Swipes") +
   ylab("Count") +
-  xlab("Simulated Median Percentage of Interhouse Swipes")
+  xlab("Simulated Median Percentage of Interhouse Swipes") + 
+  scale_fill_manual(values=c("#D2232A","#D2232A","#D2232A","#D2232A","#D2232A","#D2232A","#D2232A","#D2232A","#D2232A","#D2232A","#D2232A","#D2232A")) + 
+  theme(legend.position="none")
   
   
 
