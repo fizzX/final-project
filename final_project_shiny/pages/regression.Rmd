@@ -154,6 +154,7 @@ mult %>%
   labs(title = "Estimated Interhouse Swipes Per Meal for Each House",
        subtitle = "Month and year are included as fixed effects in this model",
        color = "House") +
+  scale_color_manual(values=c("#D2232A","#D2232A","#D2232A","#D2232A","#D2232A","#D2232A","#D2232A","#D2232A","#D2232A","#D2232A","#D2232A","#D2232A")) + 
   theme(legend.position="none")
 
 ```
@@ -189,7 +190,8 @@ mult %>%
   ylab("Estimated Interhouse Swipes Per Meal") +
   labs(title = "Estimated Interhouse Swipes Per Meal for Each Month",
        subtitle = "Houses are included as fixed effects in this model",
-       color = "Month") +
+       color = "Month") +  
+  scale_color_manual(values=c("#D2232A","#D2232A","#D2232A","#D2232A","#D2232A","#D2232A","#D2232A","#D2232A","#D2232A","#D2232A","#D2232A","#D2232A","#D2232A","#D2232A","#D2232A","#D2232A","#D2232A","#D2232A")) + 
   theme(legend.position="none")
   
 
