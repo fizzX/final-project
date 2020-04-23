@@ -50,7 +50,8 @@ tidy_int_reg_bag %>%
     xlab("House") +
     labs(title = "House Median Lunch Swipe Counts") +
     scale_fill_discrete(name = "Academic Year",
-                        labels = c("2017-2018", "2018-2019"))
+                        labels = c("2017-2018", "2018-2019")) + 
+    scale_fill_manual(values=c("#D2232A","#86171B"))
 
 ggsave("final_project_shiny/int-reg-lunch-houses/house_lunch_both.png")
 
@@ -72,7 +73,8 @@ tidy_int_reg_bag %>%
     xlab("House") +
     labs(title = "House Median Lunch Swipe Counts, Interhouse Only") +
     scale_fill_discrete(name = "Academic Year",
-                        labels = c("2017-2018", "2018-2019"))
+                        labels = c("2017-2018", "2018-2019")) + 
+    scale_fill_manual(values=c("#D2232A","#86171B"))
 
 ggsave("final_project_shiny/int-reg-lunch-houses/house_lunch_int.png")
 
@@ -94,7 +96,8 @@ tidy_int_reg_bag %>%
     xlab("House") +
     labs(title = "House Median Lunch Swipe Counts, Residents Only") +
     scale_fill_discrete(name = "Academic Year",
-                        labels = c("2017-2018", "2018-2019"))
+                        labels = c("2017-2018", "2018-2019")) + 
+    scale_fill_manual(values=c("#D2232A","#86171B"))
 
 ggsave("final_project_shiny/int-reg-lunch-houses/house_lunch_reg.png")
 
@@ -140,7 +143,9 @@ tidy_int_reg_bag %>%
   labs(title = "Change in Interhouse at Breakfast",
        subtitle = "Calculated as the difference in the percent of median \ninterhouse swipes in 2017-2018 and 2018-2019") +
   xlab("Difference") +
-  ylab("House")
+  ylab("House") + 
+  scale_fill_manual(values=c("#D2232A","#D2232A","#86171B","#86171B","#D2232A","#86171B","#D2232A","#D2232A","#86171B","#86171B","#86171B","#86171B","#D2232A")) + 
+  theme(legend.position="none")  
 
 # saving image for shiny
 
@@ -179,7 +184,9 @@ tidy_int_reg_bag %>%
   labs(title = "Change in Interhouse at Lunch",
        subtitle = "Calculated as the difference in the percent of median \ninterhouse swipes in 2017-2018 and 2018-2019") +
   xlab("Difference") +
-  ylab("House")
+  ylab("House") + 
+  scale_fill_manual(values=c("#86171B","#86171B","#86171B","#D2232A","#86171B","#D2232A","#D2232A","#86171B","#D2232A","#86171B","#86171B","#86171B","#D2232A")) + 
+  theme(legend.position="none")  
 
 # saving for access in shiny app
 
@@ -215,7 +222,9 @@ tidy_int_reg_bag %>%
   labs(title = "Change in Interhouse at Dinner",
        subtitle = "Calculated as the difference in the percent of median \ninterhouse swipes in 2017-2018 and 2018-2019") +
   xlab("Difference") +
-  ylab("House")
+  ylab("House") + 
+  scale_fill_manual(values=c("#D2232A","#D2232A","#86171B","#D2232A","#D2232A","#D2232A","#D2232A","#86171B","#D2232A","#86171B","#86171B","#86171B","#D2232A")) + 
+  theme(legend.position="none")  
   
 # saving for shiny
 
@@ -255,7 +264,9 @@ tidy_int_reg_bag %>%
   labs(title = "Change in Interhouse at Breakfast",
        subtitle = "Calculated as the difference in median \ninterhouse swipes in 2017-2018 and 2018-2019") +
   xlab("Difference") +
-  ylab("House")
+  ylab("House") + 
+  scale_fill_manual(values=c("#D2232A","#D2232A","#86171B","#86171B","#86171B","#86171B","#D2232A","#86171B","#D2232A","#86171B","#86171B","#86171B","#D2232A")) + 
+  theme(legend.position="none")  
 
 # saving image for shiny
 
@@ -284,7 +295,9 @@ tidy_int_reg_bag %>%
   labs(title = "Change in Interhouse at Lunch",
        subtitle = "Calculated as the difference in median \ninterhouse swipes in 2017-2018 and 2018-2019") +
   xlab("Difference") +
-  ylab("House")
+  ylab("House") + 
+  scale_fill_manual(values=c("#86171B","#86171B","#86171B","#D2232A","#86171B","#D2232A","#D2232A","#86171B","#D2232A","#86171B","#86171B","#86171B","#D2232A")) + 
+  theme(legend.position="none")
 
 # saving image for shiny
 
@@ -313,7 +326,9 @@ tidy_int_reg_bag %>%
   labs(title = "Change in Interhouse at Dinner",
        subtitle = "Calculated as the difference in median \ninterhouse swipes in 2017-2018 and 2018-2019") +
   xlab("Difference") +
-  ylab("House")
+  ylab("House") + 
+  scale_fill_manual(values=c("#D2232A","#D2232A","#86171B","#D2232A","#D2232A","#D2232A","#D2232A","#86171B","#D2232A","#86171B","#86171B","#86171B","#D2232A")) + 
+  theme(legend.position="none")
 
 # saving image for shiny
 
@@ -445,7 +460,8 @@ tidy_int_reg_bag %>%
   scale_fill_discrete(name = "Academic Year",
                       labels = c("2017-2018", "2018-2019")) +
   xlab("Day of the Week") +
-  ylab("Median Swipe Count")
+  ylab("Median Swipe Count") + 
+  scale_fill_manual(values=c("#D2232A","#86171B"))
 
 ggsave("final_project_shiny/flyby-daily-counts/both.png")
 
@@ -467,7 +483,8 @@ tidy_int_reg_bag %>%
        subtitle = "In terms of median swipe counts") +
   theme(legend.position = "none") +
   xlab("Day of the Week") +
-  ylab("Median Swipe Count")
+  ylab("Median Swipe Count") + 
+  scale_fill_manual(values=c("#D2232A"))
 
 ggsave("final_project_shiny/flyby-daily-counts/1718.png")
   
@@ -489,7 +506,8 @@ tidy_int_reg_bag %>%
        subtitle = "In terms of median swipe counts") +
   theme(legend.position = "none") +
   xlab("Day of the Week") +
-  ylab("Median Swipe Count")
+  ylab("Median Swipe Count") + 
+  scale_fill_manual(values=c("#D2232A"))
 
 ggsave("final_project_shiny/flyby-daily-counts/1819.png")
 
@@ -511,7 +529,8 @@ tidy_int_reg_bag %>%
        subtitle = "The increase in median swipe counts for the 2017-2018 and 2018-2019 \nacademic years") +
   theme(legend.position = "none") +
   xlab("Day of the Week") +
-  ylab("Difference in Median Swipe Counts")
+  ylab("Difference in Median Swipe Counts") + 
+  scale_fill_manual(values=c("#D2232A"))
 
 ggsave("final_project_shiny/flyby-daily-counts/increase.png")
 
