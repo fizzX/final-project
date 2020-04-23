@@ -20,8 +20,10 @@ I started off with 60 different spreadsheets--one for each semester at each dini
 My GitHub repository can be found [here](https://github.com/kayla-manning/final-project). The "raw-data" folder contains the initial Excel spreadsheets and a .csv entitled "all_tidy", where I combined all of the data in a tidied format. For a look at the finished product after nearly 1,000 lines of cleaning, tidying, and joining the data, take a look at "raw-data/all_tidy.csv" in my repository! 
 
 
-### About Me
+### About Us
 
-My name is Kayla Manning, and I am a sophomore concentrating in Statistics with a secondary in Global Health and Health Policy. You can reach me at [kaylamanning@college.harvard.edu]() for any questions pertaining to this project.
+Kayla Manning is a sophomore concentrating in Statistics with a secondary in Global Health and Health Policy. You can reach her at [kaylamanning@college.harvard.edu]() for any questions pertaining to this project.
 
+Derrick Ngo is a freshman who hails from Houston, Texas and loves bbq. You can reach him at [derrickngo@college.harvard.edu]() for any questions pertaining to this project. 
 
+William Drew is a junior concentrating in Computer Science on the Mind, Brain and Behavior Track with a secondary in Mathematical Sciences. You can reach him at [wdrew@college.harvard.edu]() for any questions pertaining to this project. 
